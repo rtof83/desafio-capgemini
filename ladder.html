@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ladder</title>
+</head>
+<body style = "font-family: 'Courier New', Courier, monospace;">
+    <input type="number" id="txtLadder" placeholder="Digite o tamanho da escada" />
+    <button id="btnLadder" onclick="createLadder()">Go!</button>
+    <div id="result"></div>
+
+    <script>
+        const createLadder = () => {
+            const count = document.getElementById('txtLadder').value;
+            document.getElementById('result').innerHTML = '';
+    
+            let space, ast;
+            for (let i = 1; i <= count; i++) {
+                space = ' '.repeat(count - i);
+                ast = '*'.repeat(i);
+    
+                document.getElementById('result').innerHTML += space + ast + '<p>';
+            }
+        }
+    </script>
+</body>
+</html>
