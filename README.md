@@ -1,4 +1,7 @@
 # created with javascript
 
-# to run
-`- node [filename]`
+## para executar (console)
+`- node [nome_do_arquivo].js`
+
+## para abrir no navegador
+`- [nome_do_arquivo].html`
